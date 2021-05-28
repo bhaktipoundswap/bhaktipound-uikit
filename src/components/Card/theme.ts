@@ -27,5 +27,5 @@ export const dark: CardTheme = {
     blue: darkColors.gradients.blue,
     violet: darkColors.gradients.violet,
   },
-  dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))",
+  dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))"
 };
