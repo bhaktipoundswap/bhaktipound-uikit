@@ -50,4 +50,10 @@ export declare const styleVariants: {
         color: string;
         boxShadow: string;
     };
+    active: {
+        backgroundColor: string;
+        color: string;
+        boxShadow: string;
+        borderBottom: string;
+    };
 };

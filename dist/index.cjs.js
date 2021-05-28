@@ -159,6 +159,7 @@ var variants$3 = {
     DANGER: "danger",
     SUBTLE: "subtle",
     SUCCESS: "success",
+    ACTIVE: "active"
 };
 
 var _a$4, _b$2;
@@ -213,6 +214,12 @@ var styleVariants$2 = (_b$2 = {},
         backgroundColor: "transparent",
         color: "primary",
         boxShadow: "none",
+    },
+    _b$2[variants$3.ACTIVE] = {
+        backgroundColor: "none",
+        color: "#7ba574",
+        boxShadow: "none",
+        borderBottom: "3px solid #7ba574"
     },
     _b$2);
 
@@ -1227,7 +1234,7 @@ var getBackgroundColor = function (_a) {
     var theme = _a.theme, variant = _a.variant;
     return theme.colors[variant === variants$3.SUBTLE ? "input" : "tertiary"];
 };
-var StyledButtonMenu = styled__default['default'].div(templateObject_1$F || (templateObject_1$F = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n"], ["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n"])), getBackgroundColor);
+var StyledButtonMenu = styled__default['default'].div(templateObject_1$F || (templateObject_1$F = __makeTemplateObject(["\n  background-color: ", ";\n  \n  display: inline-flex;\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n"], ["\n  background-color: ", ";\n  \n  display: inline-flex;\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n"])), getBackgroundColor);
 var templateObject_1$F;
 
 var ButtonMenu$1 = function (_a) {

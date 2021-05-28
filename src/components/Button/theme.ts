@@ -53,4 +53,10 @@ export const styleVariants = {
     color: "primary",
     boxShadow: "none",
   },
+  [variants.ACTIVE]: {
+    backgroundColor: "none",
+    color: "#7ba574",
+    boxShadow: "none",
+    borderBottom: "3px solid #7ba574"
+  },
 };
