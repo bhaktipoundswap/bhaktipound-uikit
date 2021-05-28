@@ -16,15 +16,6 @@ const InactiveButton: PolymorphicComponent<InactiveButtonProps, "button"> = styl
   }
 `;
 
-const ActiveButton: PolymorphicComponent<InactiveButtonProps, "button"> = styled(Button)<InactiveButtonProps>`
-  background-color: transparent;
-  color: #7ba574,
-  borderBottom: "3px solid #7ba574;
-  &:hover:not(:disabled):not(:active) {
-    background-color: transparent;
-  }
-`;
-
 const ButtonMenuItem: PolymorphicComponent<ButtonMenuItemProps, "button"> = ({
   isActive = false,
   variant = variants.ACTIVE,
@@ -35,7 +26,7 @@ const ButtonMenuItem: PolymorphicComponent<ButtonMenuItemProps, "button"> = ({
     return <InactiveButton forwardedAs={as} variant="tertiary" {...props} />;
   }
 
-  return <ActiveButton forwardedAs={as} variant="tertiary"  {...props} />;
+  return <Button as={as} variant={variant} {...props} />;
 };
 
 export default ButtonMenuItem;
