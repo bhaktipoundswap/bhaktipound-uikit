@@ -128,7 +128,7 @@ const Menu: React.FC<NavProps> = ({
         </Flex>
       </StyledNav>
       <BodyWrapper>
-        <Panel
+        {/* <Panel
           isPushed={isPushed}
           isMobile={isMobile}
           showMenu={showMenu}
@@ -140,7 +140,7 @@ const Menu: React.FC<NavProps> = ({
           cakePriceUsd={cakePriceUsd}
           pushNav={setIsPushed}
           links={links}
-        />
+        /> */}
         <Inner isPushed={isPushed} showMenu={showMenu}>
           {children}
         </Inner>
