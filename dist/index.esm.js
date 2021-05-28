@@ -1218,7 +1218,7 @@ var templateObject_1$G, templateObject_2$i;
 
 var getBackgroundColor = function (_a) {
     var theme = _a.theme, variant = _a.variant;
-    return theme.colors[variant === variants$3.SUBTLE ? "input" : "tertiary"];
+    return theme.colors[variant === variants$3.SUBTLE || variant === variants$3.ACTIVE ? "input" : "tertiary"];
 };
 var StyledButtonMenu = styled.div(templateObject_1$F || (templateObject_1$F = __makeTemplateObject(["\n  background-color: ", ";\n  \n  display: inline-flex;\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n"], ["\n  background-color: ", ";\n  \n  display: inline-flex;\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n"])), getBackgroundColor);
 var templateObject_1$F;
