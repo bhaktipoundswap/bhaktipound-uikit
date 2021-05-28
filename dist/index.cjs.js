@@ -78,7 +78,7 @@ var getThemeValue = function (path, fallback) { return function (theme) {
 }; };
 
 var rotate$1 = styled.keyframes(templateObject_1$Q || (templateObject_1$Q = __makeTemplateObject(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"], ["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"])));
-var spinStyle = styled.css(templateObject_2$l || (templateObject_2$l = __makeTemplateObject(["\n  animation: ", " 2s linear infinite;\n"], ["\n  animation: ", " 2s linear infinite;\n"])), rotate$1);
+var spinStyle = styled.css(templateObject_2$m || (templateObject_2$m = __makeTemplateObject(["\n  animation: ", " 2s linear infinite;\n"], ["\n  animation: ", " 2s linear infinite;\n"])), rotate$1);
 var Svg = styled__default['default'].svg(templateObject_3$9 || (templateObject_3$9 = __makeTemplateObject(["\n  align-self: center; // Safari fix\n  fill: ", ";\n  flex-shrink: 0;\n  ", "\n  ", "\n"], ["\n  align-self: center; // Safari fix\n  fill: ", ";\n  flex-shrink: 0;\n  ", "\n  ", "\n"])), function (_a) {
     var theme = _a.theme, color = _a.color;
     return getThemeValue("colors." + color, color)(theme);
@@ -92,7 +92,7 @@ Svg.defaultProps = {
     xmlns: "http://www.w3.org/2000/svg",
     spin: false,
 };
-var templateObject_1$Q, templateObject_2$l, templateObject_3$9;
+var templateObject_1$Q, templateObject_2$m, templateObject_3$9;
 
 var Icon$1j = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
@@ -1090,7 +1090,7 @@ var IconLabel = styled__default['default'].div(templateObject_1$J || (templateOb
     return theme.alert.background;
 });
 var withHandlerSpacing = 32 + 12 + 8; // button size + inner spacing + handler position
-var Details = styled__default['default'].div(templateObject_2$k || (templateObject_2$k = __makeTemplateObject(["\n  flex: 1;\n  padding-bottom: 12px;\n  padding-left: 12px;\n  padding-right: ", ";\n  padding-top: 12px;\n"], ["\n  flex: 1;\n  padding-bottom: 12px;\n  padding-left: 12px;\n  padding-right: ", ";\n  padding-top: 12px;\n"])), function (_a) {
+var Details = styled__default['default'].div(templateObject_2$l || (templateObject_2$l = __makeTemplateObject(["\n  flex: 1;\n  padding-bottom: 12px;\n  padding-left: 12px;\n  padding-right: ", ";\n  padding-top: 12px;\n"], ["\n  flex: 1;\n  padding-bottom: 12px;\n  padding-left: 12px;\n  padding-right: ", ";\n  padding-top: 12px;\n"])), function (_a) {
     var hasHandler = _a.hasHandler;
     return (hasHandler ? withHandlerSpacing + "px" : "12px");
 });
@@ -1112,7 +1112,7 @@ var Alert = function (_a) {
             React__default['default'].createElement(IconButton, { scale: "sm", variant: "text", onClick: onClick },
                 React__default['default'].createElement(Icon$V, { width: "24px", color: "currentColor" }))))));
 };
-var templateObject_1$J, templateObject_2$k, templateObject_3$8, templateObject_4$6;
+var templateObject_1$J, templateObject_2$l, templateObject_3$8, templateObject_4$6;
 
 var scales$7 = {
     SM: "sm",
@@ -1181,11 +1181,11 @@ var StyledBalanceInput = styled__default['default'](Box)(templateObject_1$H || (
     var theme = _a.theme, isWarning = _a.isWarning;
     return theme.shadows[isWarning ? "warning" : "inset"];
 });
-var StyledInput$1 = styled__default['default'](Input$1)(templateObject_2$j || (templateObject_2$j = __makeTemplateObject(["\n  background: transparent;\n  border-radius: 0;\n  box-shadow: none;\n  padding-left: 0;\n  padding-right: 0;\n  text-align: right;\n\n  ::placeholder {\n    color: ", ";\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: none;\n  }\n"], ["\n  background: transparent;\n  border-radius: 0;\n  box-shadow: none;\n  padding-left: 0;\n  padding-right: 0;\n  text-align: right;\n\n  ::placeholder {\n    color: ", ";\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: none;\n  }\n"])), function (_a) {
+var StyledInput$1 = styled__default['default'](Input$1)(templateObject_2$k || (templateObject_2$k = __makeTemplateObject(["\n  background: transparent;\n  border-radius: 0;\n  box-shadow: none;\n  padding-left: 0;\n  padding-right: 0;\n  text-align: right;\n\n  ::placeholder {\n    color: ", ";\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: none;\n  }\n"], ["\n  background: transparent;\n  border-radius: 0;\n  box-shadow: none;\n  padding-left: 0;\n  padding-right: 0;\n  text-align: right;\n\n  ::placeholder {\n    color: ", ";\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: none;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.textSubtle;
 });
-var templateObject_1$H, templateObject_2$j;
+var templateObject_1$H, templateObject_2$k;
 
 var BalanceInput = function (_a) {
     var value = _a.value, _b = _a.placeholder, placeholder = _b === void 0 ? "0.0" : _b, onUserInput = _a.onUserInput, currencyValue = _a.currencyValue, inputProps = _a.inputProps, _c = _a.isWarning, isWarning = _c === void 0 ? false : _c, props = __rest(_a, ["value", "placeholder", "onUserInput", "currencyValue", "inputProps", "isWarning"]);
@@ -1206,7 +1206,7 @@ var Separator = styled__default['default'].div(templateObject_1$G || (templateOb
     var theme = _a.theme;
     return theme.mediaQueries.md;
 });
-var StyledBreadcrumbs = styled__default['default'].ul(templateObject_2$i || (templateObject_2$i = __makeTemplateObject(["\n  align-items: center;\n  color: ", ";\n  display: flex;\n  flex-wrap: wrap;\n  list-style-type: none;\n\n  ", "\n"], ["\n  align-items: center;\n  color: ", ";\n  display: flex;\n  flex-wrap: wrap;\n  list-style-type: none;\n\n  ", "\n"])), function (_a) {
+var StyledBreadcrumbs = styled__default['default'].ul(templateObject_2$j || (templateObject_2$j = __makeTemplateObject(["\n  align-items: center;\n  color: ", ";\n  display: flex;\n  flex-wrap: wrap;\n  list-style-type: none;\n\n  ", "\n"], ["\n  align-items: center;\n  color: ", ";\n  display: flex;\n  flex-wrap: wrap;\n  list-style-type: none;\n\n  ", "\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.textDisabled;
 }, styledSystem.space);
@@ -1228,7 +1228,7 @@ var Breadcrumbs = function (_a) {
     var items = insertSeparators(validItems, separator);
     return (React__default['default'].createElement(StyledBreadcrumbs, null, items.map(function (item, index) { return (React__default['default'].createElement("li", { key: "child-" + index }, item)); })));
 };
-var templateObject_1$G, templateObject_2$i;
+var templateObject_1$G, templateObject_2$j;
 
 var getBackgroundColor = function (_a) {
     var theme = _a.theme, variant = _a.variant;
@@ -1253,14 +1253,15 @@ var InactiveButton = styled__default['default'](Button)(templateObject_1$E || (t
     var theme = _a.theme, variant = _a.variant;
     return (variant === variants$3.PRIMARY ? theme.colors.primary : theme.colors.textSubtle);
 });
+var ActiveButton = styled__default['default'](Button)(templateObject_2$i || (templateObject_2$i = __makeTemplateObject(["\n  background-color: transparent;\n  color: #7ba574,\n  borderBottom: \"3px solid #7ba574;\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"], ["\n  background-color: transparent;\n  color: #7ba574,\n  borderBottom: \"3px solid #7ba574;\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"])));
 var ButtonMenuItem = function (_a) {
-    var _b = _a.isActive, isActive = _b === void 0 ? false : _b, _c = _a.variant, variant = _c === void 0 ? variants$3.ACTIVE : _c, as = _a.as, props = __rest(_a, ["isActive", "variant", "as"]);
+    var _b = _a.isActive, isActive = _b === void 0 ? false : _b; _a.variant; var as = _a.as, props = __rest(_a, ["isActive", "variant", "as"]);
     if (!isActive) {
         return React__default['default'].createElement(InactiveButton, __assign({ forwardedAs: as, variant: "tertiary" }, props));
     }
-    return React__default['default'].createElement(Button, __assign({ as: as, variant: variant }, props));
+    return React__default['default'].createElement(ActiveButton, __assign({ forwardedAs: as, variant: "tertiary" }, props));
 };
-var templateObject_1$E;
+var templateObject_1$E, templateObject_2$i;
 
 /**
  * Priority: Warning --> Success --> Active
